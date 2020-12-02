@@ -22,16 +22,16 @@ public class Listeners extends TestListenerAdapter
 		//specify location of the report
 		htmlReporter=new ExtentHtmlReporter(System.getProperty("user.dir")+ "/Reports/NoonReport.html");
 				
-		htmlReporter.config().setDocumentTitle("Automation Report"); // Tile of report
-		htmlReporter.config().setReportName("Rest API Testing Report"); // name of the report
+		htmlReporter.config().setDocumentTitle("Automation Report"); 
+		htmlReporter.config().setReportName("Rest API Testing Report"); 
 		htmlReporter.config().setTheme(Theme.STANDARD);
 		
 		extent=new ExtentReports();
 		extent.attachReporter(htmlReporter);
-		extent.setSystemInfo("Project Name","FOX Database API");
+		
 		extent.setSystemInfo("Host name","localhost");
 		extent.setSystemInfo("Environemnt","QA");
-		extent.setSystemInfo("user","hemant");
+		
 			
 	}
 	
