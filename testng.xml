@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="NoonRestAPISuite">
+<listeners>
+	<listener class-name="com.noonapi.utilities.Listeners" />
+</listeners>
+	<test thread-count="5" name="NoonRestAPITest">
+		<classes>
+			<class name="com.noonapi.testCases.TC001_CheckTokenSuccess" />
+			<class name="com.noonapi.testCases.TC002_TokenInvalidUser" />
+			<class name="com.noonapi.testCases.TC003_UserTransactionHistory" />
+			<class name="com.noonapi.testCases.TC004_InvalidToken" />
+		</classes>
+	</test>
+</suite>
